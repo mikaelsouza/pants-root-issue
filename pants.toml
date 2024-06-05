@@ -3,7 +3,7 @@ pants_version = "2.21.0"
 backend_packages = ["pants.backend.python"]
 
 [source]
-root_patterns = ["src/python/**/"]
+root_patterns = ["src/python/**/", "scripts/"]
 
 [python]
 interpreter_constraints = [">=3.8"]
