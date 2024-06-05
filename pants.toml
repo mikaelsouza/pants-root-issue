@@ -1,0 +1,14 @@
+[GLOBAL]
+pants_version = "2.21.0"
+backend_packages = ["pants.backend.python"]
+
+[source]
+root_patterns = ["src/python/**/"]
+
+[python]
+interpreter_constraints = [">=3.8"]
+enable_resolves = true
+default_resolve = "global"
+
+[python.resolves]
+global = "3rdparty/python/lockfiles/global.lock"
